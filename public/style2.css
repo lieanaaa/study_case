@@ -1,0 +1,22 @@
+body{
+    background-color: #feebed;
+}
+/* Container */
+div.container {
+    padding: 2em;
+    margin-top: 30px;
+    width: 25em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background:  #beebe8;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+div a{
+    color:  black;
+    text-align: center;
+}
+label{
+    color: black;
+}
