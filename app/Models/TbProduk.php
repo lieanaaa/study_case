@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class TbProduk extends Model
 {
     protected $table ='tb_produk';
-    protected $guarded = [];
+    protected $guarded = [''];
 }

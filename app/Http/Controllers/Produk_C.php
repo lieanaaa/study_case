@@ -36,7 +36,7 @@ class Produk_C extends Controller
             'password'=>bcrypt($request->password),
         ]);
 
-        return view('/login');
+        return view('/login'); 
     }
 
 
@@ -64,9 +64,7 @@ class Produk_C extends Controller
      public function store(ProdukRequest $request)
      {   
             $data = $request->validated();
-
             $produk = new TbProduk;
-
             $produk->judulProduk = $data['judulProduk'];
             $produk->deskripsiBarang = $data['deskripsiBarang'];
             $produk->harga = $data['harga'];
@@ -104,6 +102,7 @@ class Produk_C extends Controller
         $data = TbProduk::find($id);
         $data->delete();
         return redirect('/produk');
+        return redirect('/dashboard')->with('successDelete', 'Data Berhasil Dihapus');
     }
 
    

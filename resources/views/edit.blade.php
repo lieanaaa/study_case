@@ -73,6 +73,10 @@
                                     <label for="" class="form-label">Harga</label>
                                     <input type="text" name="harga" value="{{ $data->harga }}" class="form-control">
                                 </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Gambar</label>
+                                    <input type="file" name="gambar" class="form-control">
+                                </div>
                                 <div class="mb-3 tombol">
                                     <button type="submit" class="btn btn-secondary">Simpan</button>
                                 </div>
